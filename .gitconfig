@@ -1,0 +1,49 @@
+[user]
+	name = Anson Chan
+	email = anson0370@gmail.com
+[branch "master"]
+  remote = origin
+  merge = refs/heads/master
+[color]
+  pager = true
+  ui = true
+  status = auto
+  branch = auto
+[pretty]
+  graph = %Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd)%Creset %C(magenta)<%an>%Creset
+[alias]
+  st = status
+  ci = commit
+  br = branch
+  co = checkout
+  df = difftool
+  ll = log --graph --pretty=graph --abbrev-commit --date=local
+  lls = log --graph --pretty=graph --abbrev-commit --date=local --stat
+  pom = push origin master
+  up = pull --rebase
+  merge = merge --no-ff
+  clean = clean -f -d
+  diffd = diff --word-diff=color --patience
+  ff = flow feature
+  fh = flow hotfix
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[core]
+  editor = vim
+  autocrlf = input
+  filemode = false
+[github]
+  user = anson0370
+[push]
+  default = matching
+[mergetool]
+  keepBackup = false
+[diff]
+  tool = vimdiff
+[difftool]
+  prompt = No
+[filter "media"]
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f

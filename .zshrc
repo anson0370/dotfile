@@ -1,0 +1,13 @@
+alias please='sudo'
+alias plz='sudo'
+alias reload='source ~/.zshrc'
+alias clean='find . -name .DS_Store -type f -exec rm -v {} \;'
+alias p='ps aux | grep'
+alias hosts='sudo vim /etc/hosts'
+alias dl="docker logs -f --tail 200"
+alias ls='lsd'
+alias ll='ls -l'
+alias la='ls -a'
+alias l='ls -la'
+alias lt='ls --tree'
+alias flushdns='sudo killall -HUP mDNSResponder'
