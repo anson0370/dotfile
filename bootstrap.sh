@@ -1,3 +1,2 @@
 #!/usr/bin/env bash
-chsh -s $(which zsh)
-source .zshrc
+source .bashrc
